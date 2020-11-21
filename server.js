@@ -2,6 +2,7 @@ const express = require("express");
 const session = require("express-session");
 const passport = require("passport");
 const mongoose = require("mongoose");
+const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3002;
 
@@ -26,6 +27,9 @@ app.use(
 // Initialize passport
 app.use(passport.initialize());
 app.use(passport.session());
+
+// add routes
+app.use(routes);
 
 // MongoDB connection
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/guildlist");
