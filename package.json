@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/jtcravey1991/GuildList/issues"
   },
-  "homepage": "https://github.com/jtcravey1991/GuildList#readme"
+  "homepage": "https://github.com/jtcravey1991/GuildList#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mongoose": "^5.10.15",
+    "passport": "^0.4.1"
+  }
 }
